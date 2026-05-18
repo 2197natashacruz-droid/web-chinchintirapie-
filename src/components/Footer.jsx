@@ -64,7 +64,25 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2024 Chinchintirapie – Escuela Carnavalera · Hecho con 🎭 y ritmo</p>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '1rem',
+          maxWidth: '1100px',
+          margin: '0 auto',
+          width: '100%',
+        }}>
+          <p style={{ margin: 0 }}>© 2024 Chinchintirapie – Escuela Carnavalera · Hecho con 🎭 y ritmo</p>
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="scroll-top-btn"
+            aria-label="Volver al principio"
+          >
+            Volver arriba ↑
+          </button>
+        </div>
       </div>
     </footer>
   );
